@@ -1,8 +1,13 @@
 use std::env;
 
 fn exit_with_usage() {
-    println!("ERROR: invalid argument");
-    println!("USAGE: ipconv <ipaddr>");
+    println!(
+        r#"
+ERROR: invalid argument
+
+USAGE: ipconv <ipaddr>
+"#
+    );
     std::process::exit(1);
 }
 
